@@ -1,0 +1,129 @@
+.section { margin-top: 0.5rem; }
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.badge {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  background: var(--bg-input);
+  border: 0.5px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: var(--text-2);
+}
+
+.dbPill {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  background: var(--green-100);
+  border: 0.5px solid var(--green-300);
+  color: var(--green-700);
+  padding: 2px 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dbPill i { font-size: 12px; }
+
+.clearAll {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-3);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: 'Syne', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s;
+}
+
+.clearAll:hover { color: var(--red-700); }
+
+.empty {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--text-3);
+  font-size: 13px;
+  border: 0.5px dashed var(--border);
+  border-radius: var(--r-lg);
+}
+
+.empty i { font-size: 30px; display: block; margin-bottom: 8px; opacity: 0.4; }
+
+.item {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  animation: fadeSlide 0.25s ease;
+  transition: border-color 0.15s;
+}
+
+.item:hover { border-color: var(--border-md); }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 0.5rem;
+  color: var(--text-3);
+}
+
+.ts {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  color: var(--text-3);
+}
+
+.text {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-2);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-3);
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.item:hover .deleteBtn { opacity: 1; }
+.deleteBtn:hover { color: var(--red-700); }
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

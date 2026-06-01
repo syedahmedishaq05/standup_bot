@@ -1,0 +1,63 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem 1rem 4rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px rgba(29,158,117,0.2);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text-1);
+}
+
+.dateBadge {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  background: var(--bg-input);
+  border: 0.5px solid var(--border);
+  padding: 3px 9px;
+  border-radius: 4px;
+  color: var(--text-2);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.dbBadge {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  background: var(--green-100);
+  border: 0.5px solid var(--green-300);
+  color: var(--green-700);
+  padding: 3px 9px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.dbBadge i { font-size: 13px; }

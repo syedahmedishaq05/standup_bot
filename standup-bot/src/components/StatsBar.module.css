@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.chip {
+  flex: 1;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.val {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'DM Mono', monospace;
+  color: var(--text-1);
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 11px;
+  color: var(--text-3);
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.label i { font-size: 12px; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
